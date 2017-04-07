@@ -5,7 +5,8 @@ end
 class Array
   def hash
     acc = 0
-    each_with_index do |el, i|
+    
+    flatten.each_with_index do |el, i|
       acc += el ^ i
     end
 
